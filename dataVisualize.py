@@ -15,7 +15,28 @@ print(air)
 # air.plot.scatter(x="station_london", y="station_paris")
 # air.plot.box()ۨ
 # air.plot.area(figsize=(9,4), subplots=True)
-plt.plot(air["station_london"],air["station_paris"], 'g^')
+# plt.plot(air["station_london"],air["station_paris"], 'g^')
+# plt.show()
+
+
+# plt.plot([1,5,10,51],[23,40,33,60],'r--')
+# plt.scatter(air["station_london"],air["station_paris"])
+# plt.hist(air["station_paris"], density=True, facecolor="g")
+# plt.xlabel("This is x label")
+# plt.ylabel("This is Y label")
+# plt.suptitle("This is our title")
+# plt.show()
+
+
+groups = ["group1","group2","group3"]
+values = [5,50,100]
+plt.figure(figsize=(9,4))
+plt.subplot(131)
+plt.bar(groups, values)
+plt.subplot(132)
+plt.scatter(groups, values)
+plt.subplot(133)
+plt.plot(values,groups)
 plt.show()
 
 
