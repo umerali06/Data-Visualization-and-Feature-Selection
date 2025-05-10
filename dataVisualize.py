@@ -28,8 +28,8 @@ print(air)
 # plt.show()
 
 
-groups = ["group1","group2","group3"]
-values = [5,50,100]
+# groups = ["group1","group2","group3"]
+# values = [5,50,100]
 # plt.figure(figsize=(9,4))
 # plt.subplot(131)
 # plt.bar(groups, values)
@@ -39,27 +39,27 @@ values = [5,50,100]
 # plt.plot(values,groups)
 # plt.show()
 
-fig, axs = plt.subplots(2,3, figsize=(9,3))
-axs[0,0].bar(groups,values,color="purple")
-axs[0,0].set_title("Bar Chart")
+# fig, axs = plt.subplots(2,3, figsize=(9,3))
+# axs[0,0].bar(groups,values,color="purple")
+# axs[0,0].set_title("Bar Chart")
 
-axs[0,1].hist(values)
-axs[0,1].set_title("Histogram")
+# axs[0,1].hist(values)
+# axs[0,1].set_title("Histogram")
 
-axs[0,2].plot(groups,values,"g--")
-axs[0,2].set_title("Line Charts")
+# axs[0,2].plot(groups,values,"g--")
+# axs[0,2].set_title("Line Charts")
 
-axs[1,0].bar(groups, values, color="yellow")
-axs[1,0].set_title("Bar chart")
+# axs[1,0].bar(groups, values, color="yellow")
+# axs[1,0].set_title("Bar chart")
 
-axs[1,1].scatter(groups,values)
-axs[1,1].set_title("Scatter chart")
+# axs[1,1].scatter(groups,values)
+# axs[1,1].set_title("Scatter chart")
 
-axs[1,2].plot(values, groups)
-axs[1,2].set_title("Plot Chart")
+# axs[1,2].plot(values, groups)
+# axs[1,2].set_title("Plot Chart")
 
-plt.tight_layout()
-plt.show()
+# plt.tight_layout()
+# plt.show()
 
 
 
