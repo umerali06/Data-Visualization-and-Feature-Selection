@@ -1,14 +1,14 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+# import pandas as pd
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 
-iris = sns.load_dataset('iris')
-mpg = sns.load_dataset('mpg')
-tips = sns.load_dataset('tips')
+# iris = sns.load_dataset('iris')
+# mpg = sns.load_dataset('mpg')
+# tips = sns.load_dataset('tips')
 
-air = pd.read_csv("air.csv")
-print(air)
+# air = pd.read_csv("air.csv")
+# print(air)
 
 
 # air["station_london"].plot()
