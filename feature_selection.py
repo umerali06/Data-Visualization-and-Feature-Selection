@@ -1,9 +1,9 @@
 from sklearn.feature_selection import chi2, SelectPercentile, mutual_info_classif, SelectKBest, f_classif, SelectFpr, GenericUnivariateSelect, SelectFdr
 from sklearn.datasets import load_breast_cancer
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
+
 
 X,y = load_breast_cancer(return_X_y=True)
+print(X)
 print(X.shape)
 
 print("******* K beast *******")
@@ -22,7 +22,7 @@ print(per_chi.shape)
 print(per_mu.shape)
 print(per_fclass.shape)
 
-print("****** FRP ******")
+print("****** FPR ******")
 fpr_chi = SelectFpr(chi2, alpha=0.001).fit_transform(X,y)
 fpr_mu = SelectFpr(chi2, alpha=0.001).fit_transform(X,y)
 fpr_fclass = SelectFpr(f_classif, alpha=0.001).fit_transform(X,y)
@@ -64,10 +64,7 @@ get_feature_names = f_names[k_chi2.get_support()]
 print(f"selected features list are:\n {get_feature_names}")
 
 k_chi3 = SelectKBest(mutual_info_classif, k=5).fit_transform(A,b)
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(k_chi3)
 
-pca = PCA(n_components=2)  
-X_pca = pca.fit_transform(X_scaled)
 
-print(f"Explained variance ratio for each component: {pca.explained_variance_ratio_}")
+
+
